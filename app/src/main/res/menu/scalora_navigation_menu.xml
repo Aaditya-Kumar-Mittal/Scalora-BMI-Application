@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navHome1"
+        android:icon="@drawable/scalora_icon_fitness1"
+        android:iconTint="@color/purple_custom_950"
+        android:title="Home" />
+    <item
+        android:id="@+id/navDetails1"
+        android:icon="@drawable/scalora_icon_bmi"
+        android:iconTint="@color/purple_custom_950"
+        android:title="BMI Calculator" />
+    <item
+        android:id="@+id/navLogout1"
+        android:icon="@drawable/scalora_icon_logout"
+        android:iconTint="@color/purple_custom_950"
+        android:title="Logout" />
+</menu>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_custom_950"
+    tools:context=".MainActivity">
+
+    <!-- Top Image -->
+    <ImageView
+        android:id="@+id/splashImage1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/scalora_back2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.65"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /> <!-- Optional fixed percent height -->
+
+    <!-- Circular Progress Bar -->
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/splashProgressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="10dp"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        android:indeterminateOnly="true"
+        app:indicatorColor="@color/aqua_500"
+        app:indicatorDirectionCircular="clockwise"
+        app:indicatorSize="40dp"
+        app:layout_constraintBottom_toTopOf="@id/splashImage2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splashImage1"
+        app:trackThickness="5dp" />
+
+    <!-- Center Logo -->
+    <ImageView
+        android:id="@+id/splashImage2"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/scalora_logo3"
+        app:layout_constraintBottom_toTopOf="@id/splashText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splashProgressBar1" />
+
+    <!-- App Name Text -->
+    <TextView
+        android:id="@+id/splashText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splashImage2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

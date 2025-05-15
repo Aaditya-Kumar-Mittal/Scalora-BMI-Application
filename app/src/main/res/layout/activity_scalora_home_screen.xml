@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_200"
+    tools:context=".ScaloraHomeScreen">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/homeToolbar1"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/scalora_icon_home"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white" />
+
+    <FrameLayout
+        android:id="@+id/homeFragmentContainer1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/gray_200"
+        app:layout_constraintBottom_toTopOf="@id/homeBottomNavigation1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeToolbar1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/homeBottomNavigation1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_200"
+        android:clickable="true"
+        android:clipToPadding="false"
+        app:activeIndicatorLabelPadding="10dp"
+        app:compatShadowEnabled="true"
+        app:elevation="10dp"
+        app:itemActiveIndicatorStyle="@color/purple_custom_main"
+        app:itemBackground="@drawable/custom_navigation_background1"
+        app:itemIconSize="32dp"
+        app:itemIconTint="@color/purple_custom_950"
+        app:itemRippleColor="@color/purple_custom_950"
+        app:itemTextAppearanceActive="@color/purple_custom_950"
+        app:itemTextAppearanceActiveBoldEnabled="true"
+        app:itemTextColor="@color/purple_custom_950"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homeFragmentContainer1"
+        app:menu="@menu/scalora_navigation_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

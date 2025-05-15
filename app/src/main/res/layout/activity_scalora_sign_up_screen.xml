@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_200"
+    tools:context=".ScaloraSignUpScreen">
+
+    <TextView
+        android:id="@+id/signupText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/signup_text1"
+        android:textColor="@color/purple_custom_950"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/signupText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signupText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/signup_text2"
+        android:textColor="@color/gray_600"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/signupNameInput1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupText1" />
+
+    <EditText
+        android:id="@+id/signupNameInput1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittext_custom_styling1"
+        android:drawableStart="@drawable/scalora_icon_name"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/signup_text3"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@color/purple_custom_950"
+        android:textColorHint="@color/gray_500"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/signupEmailInput1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupText2"
+        app:layout_constraintWidth_percent="0.75"
+
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/signupEmailInput1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_custom_styling1"
+        android:drawableStart="@drawable/scalora_icon_email"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/signup_text4"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="@color/purple_custom_950"
+        android:textColorHint="@color/gray_500"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/signupPasswordInput1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupNameInput1"
+        app:layout_constraintWidth_percent="0.75"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/signupPasswordInput1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_custom_styling1"
+        android:drawableStart="@drawable/scalora_icon_password"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/signup_text5"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/purple_custom_950"
+        android:textColorHint="@color/gray_500"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/signupConfirmPasswordInput1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupEmailInput1"
+        app:layout_constraintWidth_percent="0.75"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/signupConfirmPasswordInput1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_custom_styling1"
+        android:drawableStart="@drawable/scalora_icon_confirm"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/poppins"
+        android:hint="@string/signup_text7"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/purple_custom_950"
+        android:textColorHint="@color/gray_500"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/signupButton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupPasswordInput1"
+        app:layout_constraintWidth_percent="0.75"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signupButton1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:clickable="true"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/signupLoginText1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupConfirmPasswordInput1"
+        app:layout_constraintWidth_percent="0.75">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_custom_floating1"
+            android:fontFamily="@font/poppins"
+            android:paddingVertical="12dp"
+            android:text="@string/signup_text9"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/signupLoginText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupButton1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/signup_text10"
+            android:textColor="@color/purple_custom_950"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signupLogin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:fontFamily="@font/poppins"
+            android:text="@string/signup_text11"
+            android:textColor="@color/purple_custom_main"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

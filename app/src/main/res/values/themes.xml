@@ -1,0 +1,24 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BMICalculator" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_custom_main</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_custom_main</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/purple_custom_main</item>
+        <item name="android:navigationBarDividerColor">@color/purple_custom_main</item>
+        <item name="android:navigationBarColor">@color/purple_custom_main</item>
+        <item name="navigationIconTint">@color/purple_custom_main</item>
+    </style>
+
+    <style name="Theme.BMICalculator" parent="Base.Theme.BMICalculator">
+        <item name="colorPrimary">@color/purple_custom_main</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple_custom_main</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/purple_custom_main</item>
+        <item name="android:navigationBarDividerColor">@color/purple_custom_main</item>
+        <item name="android:navigationBarColor">@color/purple_custom_main</item>
+        <item name="navigationIconTint">@color/purple_custom_main</item>
+    </style>
+</resources>

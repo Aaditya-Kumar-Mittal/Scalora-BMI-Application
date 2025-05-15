@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_200"
+    tools:context=".ScaloraInformationFragment">
+
+    <TextView
+        android:id="@+id/informationHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="BMI Analysis"
+        android:textAlignment="center"
+        android:textColor="@color/purple_custom_950"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/informationTableCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/informationTableCard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:outlineSpotShadowColor="@color/purple_custom_main"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/informationHeading"
+        app:layout_constraintHeight_percent="0.60"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@id/informationHeading"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="25dp"
+            android:stretchColumns="*"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TableRow android:layout_weight="1">
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="BMI"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="Category"
+                    android:textAlignment="textEnd"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="Less than 18.5"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/gray_500"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="Underweight"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/purple_custom_main"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="18.5 to 24.9"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/gray_500"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="Healthy"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/purple_custom_main"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="25 to 29.9"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/gray_500"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="Overweight"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/purple_custom_main"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:layout_weight="1">
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="30 or above"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/gray_500"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="8dp"
+                    android:text="Obese"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/purple_custom_main"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
